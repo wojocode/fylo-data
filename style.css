@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root{
+--gradient_start: hsl(6, 100%, 80%);
+--gradnient_end: hsl(335, 100%, 65%);
+--pale_blue: hsl(243, 100%, 93%);
+--grayish_blue: hsl(229, 7%, 55%);
+--dark_blue: hsl(228, 56%, 26%);
+--very_dark_blue: hsl(229, 57%, 11%);
+font-size:14px;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    min-height:100vh;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+main{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+section{
+    width:85%;
+    padding:1.6rem 2.7rem;
+    background-color: var(--dark_blue);
+    border-radius:0.6rem;
+}
+section > *{
+    padding:1rem 0;
+}
+.logo{
+    border-top-right-radius: 7rem;
+}
+.icons_box{
+    display:flex;
+    gap:1.2rem;
+}
+.icon{
+    background-color: var(--very_dark_blue);
+    height:3.3rem;
+    width:3.3rem;
+    border-radius:0.5rem;
+    position:relative;
+}
+.icons_box img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.bar{
+    display:flex;
+    flex-direction: column;
+}
+label{
+    font-size:1rem;
+    font-weight: 100;
+    text-align:center;
+}
+b{
+    text-transform: uppercase;
+}
+meter{
+    position: relative;
+    padding:0;
+    width:100%;
+   
+}
+meter::after{
+    content:attr(max);
+    position: absolute;
+    top:20px;
+    right:0;
+}
+meter::-webkit-meter-bar{
+
+
+}
+meter::-webkit-meter-optimum-value{
+    
+}
+
